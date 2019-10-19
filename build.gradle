@@ -1,0 +1,28 @@
+// 这里表示引用config.gradle文件
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+        //lambda
+        classpath 'me.tatarka:gradle-retrolambda:3.6.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        // 注意!!! RxCache 是托管于 jitpack 仓库的, 如果没有这一段代码将永远依赖不了 RxCache
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
