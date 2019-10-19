@@ -1,4 +1,4 @@
-package com.eren.wanandroidmvparms;
+package com.eren.wanandroidmvparms.mvp.model.api;
 
 public interface Api {
 

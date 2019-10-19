@@ -5,6 +5,7 @@ import android.content.Context;
 
 import androidx.fragment.app.FragmentManager;
 
+import com.eren.wanandroidmvparms.mvp.model.api.Api;
 import com.jess.arms.base.delegate.AppLifecycles;
 import com.jess.arms.di.module.GlobalConfigModule;
 import com.jess.arms.integration.ConfigModule;
